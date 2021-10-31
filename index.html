@@ -27,22 +27,33 @@
   <br>
   <br>
 <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-    <a href="https://logwork.com/countdown-rxgy" class="countdown-timer" data-style="circles" data-timezone="Asia/Dubai" data-textcolor="#529dff" data-date="2021-10-31 12:45" data-background="#1eff00" data-digitscolor="#ffffff" data-unitscolor="#fafafa">Launch for Python Projects:</a>
+<a href="https://logwork.com/countdown-r1df" class="countdown-timer" data-style="circles" data-timezone="Asia/Dubai" data-textcolor="#ffffff" data-date="2021-11-01 12:41" data-background="#09ff00" data-digitscolor="#ffffff" data-unitscolor="#ff1919">Launch of Python-projects</a>
 </div>
 <script>
-    function myFunction() {
-    var d = new Date();
-    var n = d.getDay()
-    var time=.getHours()
-    if(n==5)
-    {
-    //based on time
-    if(time==)
-    {
-        window.location.href="https://python-projects-1.c0dingflip.repl.co";
-    }
+  // Set the date we're counting down to
+var countDownDate = new Date("Now 1, 2021 12:45:00").getTime();
 
-    }
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    window.location.replace("https://python-projects-1.c0dingflip.repl.co/");
+  }
+}, 1000);
 </script>
 <!-- Start of python-projects Zendesk Widget script --><script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=8ff5ee04-eba8-4a40-bcb9-81ad92342235"> </script><!-- End of python-projects Zendesk Widget script -->
 </html>
